@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Visualizations</h1>
+        </header>
+        <main>
+            <h2>Dataset Distribution</h2>
+            <img src="{{ url_for('static', filename='genre_distribution.png') }}" alt="Genre Distribution" style="max-width: 100%; height: auto;">
+
+            <h2>Movie Ratings Distribution</h2>
+            <img src="{{ url_for('static', filename='ratings_distribution.png') }}" alt="Movie Ratings Distribution" style="max-width: 100%; height: auto;">
+
+            <h2>Model Accuracy Comparison</h2>
+            <img src="{{ url_for('static', filename='model_accuracy_comparison.png') }}" alt="Model Accuracy Comparison" style="max-width: 100%; height: auto;">
+
+            <a href="{{ url_for('index') }}" class="back-button">Back to Home</a>
+            
+        </main>
+    </div>
+</body>
+</html>
